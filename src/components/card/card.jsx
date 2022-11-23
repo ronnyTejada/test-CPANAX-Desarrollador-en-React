@@ -1,8 +1,9 @@
 import React from 'react';
+import "./styles.css";
 
 const Card = ({url,title,brand}) => {
     return ( 
-        <div>
+        <div className='card'>
             <img src={url} alt="" />
             <div>
                 <h3>{title}</h3>

@@ -3,7 +3,7 @@ import { getUsers } from "../../utils/controllers";
 import BaseTable from "react-base-table";
 import "react-base-table/styles.css";
 import { colums, LIMIT } from "../../utils/consts";
-import Pagination from "../../components/pagination";
+import Pagination from "../../components/pagination/pagination";
 import "./styles.css";
 
 const Users = () => {

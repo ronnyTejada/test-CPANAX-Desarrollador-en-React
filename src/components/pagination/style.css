@@ -1,0 +1,14 @@
+.pagination{
+    width: 90px;
+    margin: 0 auto;
+}
+
+.btn{
+    border: none;
+    background-color: aqua;
+    
+}
+
+.btn:active{
+    background-color: rgb(4, 123, 123);
+}

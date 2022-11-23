@@ -1,4 +1,5 @@
 import React from "react";
+import "./style.css";
 
 const Pagination = ({ setSkip, limit, skip }) => {
   const setPage = (type) => {
@@ -9,9 +10,9 @@ const Pagination = ({ setSkip, limit, skip }) => {
     }
   };
   return (
-    <div>
-      <button onClick={() => setSkip((prev) => (prev -= limit))} disabled={skip === 0}>Prev</button>
-      <button onClick={() => setSkip((prev) => (prev += limit))}>Next</button>
+    <div className="pagination">
+      <button className="btn" onClick={() => setSkip((prev) => (prev -= limit))} disabled={skip === 0}>Prev</button>
+      <button className="btn" onClick={() => setSkip((prev) => (prev += limit))}>Next</button>
     </div>
   );
 };

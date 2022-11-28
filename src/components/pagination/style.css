@@ -5,10 +5,15 @@
 
 .btn{
     border: none;
-    background-color: aqua;
+    border-bottom: 1px solid gray;
+    margin-bottom: 20px;
     
 }
 
 .btn:active{
     background-color: rgb(4, 123, 123);
+}
+
+.pagination__btnWrapper{
+    display: flex;
 }

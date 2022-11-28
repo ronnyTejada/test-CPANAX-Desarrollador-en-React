@@ -1,0 +1,19 @@
+
+.home{
+    background-color: red;
+    height: 100vh;
+    background-image: url('../../assets/imgs/ai.jpeg');
+    background-size: cover;
+  background-position: center;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: white;
+
+}
+
+.home__title{
+    z-index: 5;
+    color: white;
+}

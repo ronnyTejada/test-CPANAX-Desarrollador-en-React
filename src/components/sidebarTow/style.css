@@ -1,0 +1,59 @@
+.sdb{
+   
+    width: 250px;
+    max-height: 500px;
+    background-color: lightgray;
+   position: fixed;
+   z-index: 2;
+   overflow-y: scroll;
+   padding-left: 10px;
+   padding-right: 10px;
+   padding-top: 10px;
+   padding-bottom: 10px;
+   
+  
+   
+   
+}
+
+.sdb__item{
+    height: 80px;
+    background-color: white;
+    border: 1px solid black ;
+    overflow-y: scroll;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 5px;
+}
+
+.add{
+    margin-bottom: 10px;
+    position: relative;
+
+}
+
+.sdb__edit{
+    display: flex;
+    background-color: transparent;
+    border: none;
+    position: absolute;
+    right: 10px;
+    align-self: flex-start;
+    color: gray;
+}
+
+.sdb__delete{
+    display: flex;
+    background-color: transparent;
+    
+    border: none;
+    position: absolute;
+    right: 35px;
+    align-self: flex-start;
+    color: red;
+}
+
+.sdb__edit:active{
+    color: black;
+}

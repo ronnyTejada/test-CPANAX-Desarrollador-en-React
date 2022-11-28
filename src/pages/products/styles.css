@@ -1,9 +1,14 @@
-
-.products{
-    display: flex;
-    align-items: center;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin-top: 50px;
-  }
+.products {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  border-radius: 30px;
+  gap: 10px;
+  width: 89%;
+  background-color: #f5f6f7;
+  margin: 0 auto;
+  margin-top: 100px;
+  padding-top: 30px;
+}

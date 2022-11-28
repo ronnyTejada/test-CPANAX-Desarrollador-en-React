@@ -1,0 +1,30 @@
+.container{
+    height: 100vh;
+    
+    margin-top: 120px;
+}
+
+.react-flow__node{
+    height: 80px;
+    background-color: white;
+    border: 1px solid black ;
+    overflow-y: scroll;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 5px;
+}
+.react-flow__handle-top{
+    background-color: blue !important;
+    width: 100% !important;
+    border-radius: 0 !important;
+    height: 10px !important;
+}
+
+.realoadBtn{
+    position: absolute;
+    margin-bottom: 10px;
+    display: none;
+    z-index: 5;
+}
+

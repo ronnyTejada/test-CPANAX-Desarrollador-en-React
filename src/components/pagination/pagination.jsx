@@ -1,18 +1,34 @@
 import React from "react";
 import "./style.css";
 
-const Pagination = ({ setSkip, limit, skip }) => {
-  const setPage = (type) => {
-    if (type === "prev") {
-      setSkip((prev) => (prev -= limit));
-    } else {
-      setSkip(4);
-    }
-  };
+const Pagination = ({ setSkip, limit, skip, scroll }) => {
+  
   return (
     <div className="pagination">
-      <button className="btn" onClick={() => setSkip((prev) => (prev -= limit))} disabled={skip === 0}>Prev</button>
-      <button className="btn" onClick={() => setSkip((prev) => (prev += limit))}>Next</button>
+      {scroll ? (
+        <button
+          className="btn"
+          onClick={() => setSkip((prev) => (prev += limit))}
+        >
+          Load More
+        </button>
+      ) : (
+        <div className="pagination__btnWrapper">
+          <button
+            className="btn"
+            onClick={() => setSkip((prev) => (prev -= limit))}
+            disabled={skip === 0}
+          >
+            Prev
+          </button>
+          <button
+            className="btn"
+            onClick={() => setSkip((prev) => (prev += limit))}
+          >
+            next
+          </button>
+        </div>
+      )}
     </div>
   );
 };

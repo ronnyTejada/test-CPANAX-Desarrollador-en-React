@@ -3,7 +3,7 @@ import { LIMIT } from "./consts";
 
 const url_base = "https://dummyjson.com/";
 
-export const getProducts = async ( skip, setData) => {
+export const getProducts = async ( skip, setData, setLoading) => {
   await axios
     .get(url_base+'products', {
       params: {
@@ -12,7 +12,9 @@ export const getProducts = async ( skip, setData) => {
       },
     })
     .then(function (response) {
-      setData(response.data.products);
+      setData((prev)=>prev.concat(response.data.products));
+      console.log(response)
+     // setLoading((prev)=> !prev)
     })
     .catch(function (error) {
       console.log(error);
